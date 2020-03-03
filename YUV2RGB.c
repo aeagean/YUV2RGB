@@ -14,7 +14,7 @@ static bool initYUV2RGB()
             s_R[i][i] = r < 0 ? 0 : r;
             s_R[i][j] = r > 255 ? 255 : r;
 
-            int b = i + (1.732446 * (i-128));
+            int b = i + (1.732446 * (j-128));
             s_B[i][i] = b < 0 ? 0 : b;
             s_B[i][j] = b > 255 ? 255 : b;
 
